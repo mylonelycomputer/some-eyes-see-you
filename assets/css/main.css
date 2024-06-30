@@ -275,7 +275,7 @@ https://codepen.io/creme/pen/rdjXav
 
 
 /* ------- Media Queries ------- */
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 770px) {
   main.home, main.subpage {
     width: 90%;
   }
