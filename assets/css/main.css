@@ -39,11 +39,44 @@ a:hover {
   text-decoration-color: rgba(81,81,81,0.4);
 }
 
+/* ------- Main ------- */
+main {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  position: relative;
+  width: 80%;
+  height: 100vh;
+}
+
+main > a:nth-child(3n+1) {
+  position: relative;
+  bottom: calc(10% - 120px);
+  left: 25px;
+  width: 220px;
+  justify-self: center;
+}
+
+main > a:nth-child(3n+2) {
+  position: relative;
+  bottom: calc(25% - 40px);
+  right: 20px;
+  width: 220px;
+  justify-self: start;
+}
+
+main > a:nth-child(3n+3) {
+  position: relative;
+  bottom: calc(30% - 200px);
+  left: -30px;
+  width: 220px;
+  justify-self: end;
+}
+
 /* ------- Eye -------
 CSS blinking eye animation from
 https://codepen.io/creme/pen/rdjXav
 */
-
 .eye {
   margin: 2rem;
   position: relative;
@@ -184,7 +217,6 @@ https://codepen.io/creme/pen/rdjXav
 .eye .iris.darkBlue::before {
   background: var(--darkBlue);
 }
-
 
 .eye .iris:hover,
 .eye .iris:focus {
