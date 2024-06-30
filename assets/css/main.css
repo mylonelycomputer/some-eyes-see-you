@@ -15,30 +15,6 @@ body {
   box-sizing: border-box;
 }
 
-::selection {
-  background-color: var(--colour-white);
-  color: var(--colour-secondary-pink);
-}
-
-::-moz-selection {
-  background-color: var(--colour-white);
-  color: var(--colour-secondary-pink);
-}
-
-::-webkit-selection {
-  background-color: var(--colour-white);
-  color: var(--colour-secondary-pink);
-}
-
-a {
-  color: var(--colour-blue);
-  cursor: pointer;
-}
-
-a:hover {
-  text-decoration-color: rgba(81,81,81,0.4);
-}
-
 /* ------- Main ------- */
 main {
   margin: auto;
