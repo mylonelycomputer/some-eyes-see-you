@@ -13,6 +13,12 @@ body {
 
 body {
   box-sizing: border-box;
+
+  --background-colour: var(--beige);
+  --text-colour: var(--grey);
+  background: var(--background-colour);
+  color: var(--text-colour);
+  font-family: var(--font-serif);
 }
 
 .hidden {
@@ -82,7 +88,6 @@ main.subpage {
   position: relative;
   width: 60%;
   height: 100%;
-  font-family: var(--font-serif);
 }
 
 main.subpage .eye .iris:hover,
@@ -94,7 +99,6 @@ main.subpage .eye .iris:focus {
 main.subpage article {
   position: relative;
   font-size: var(--font-size--default);
-  color: var(--grey);
 }
 
 main.subpage p {
@@ -109,7 +113,7 @@ main.subpage a:visited {
   text-underline-offset: 4px;
   text-decoration-style: wavy;
   text-decoration-thickness: 1px;
-  color: var(--grey);
+  color: var(--text-colour);
 }
 
 main.subpage a:hover,
@@ -267,4 +271,36 @@ https://codepen.io/creme/pen/rdjXav
 .eye .iris:focus {
   height: 20px;
   cursor: pointer;
+}
+
+
+/* ------- Media Queries ------- */
+@media screen and (max-width: 570px) {
+  main.home, main.subpage {
+    width: 90%;
+  }
+  main.home {
+    grid-template-columns: repeat(1, 100%);
+  }
+  main.home a:nth-child(n) {
+    margin: 0;
+    bottom: 0;
+    justify-self: center;
+  }
+  .eye {
+    margin: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --background-colour: #000;
+    --text-colour: #fff;
+  }
 }
