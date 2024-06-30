@@ -60,7 +60,6 @@ https://codepen.io/creme/pen/rdjXav
   width: 190px;
   height: 80px;
   border-radius: 50%;
-  background: var(--lightBlue);
   overflow: hidden;
   transition: 700ms cubic-bezier(0.1, 0.2, 0.3, 0.4);
 }
@@ -76,8 +75,116 @@ https://codepen.io/creme/pen/rdjXav
   width: 45px;
   height: 45px;
   border-radius: 50%;
+}
+
+.eye .iris.lightBlue {
+  background: var(--lightBlue);
+}
+
+.eye .iris.green {
+  background: var(--green);
+}
+
+.eye .iris.black {
+  background: var(--black);
+}
+
+.eye .iris.navy {
+  background: var(--navy);
+}
+
+.eye .iris.green {
+  background: var(--green);
+}
+
+.eye .iris.lightGreen {
+  background: var(--lightGreen);
+}
+
+.eye .iris.orange {
+  background: var(--orange);
+}
+
+.eye .iris.purple {
+  background: var(--purple);
+}
+
+.eye .iris.pink {
+  background: var(--pink);
+}
+
+.eye .iris.red {
+  background: var(--red);
+}
+
+.eye .iris.tan {
+  background: var(--tan);
+}
+
+.eye .iris.yellow {
+  background: var(--yellow);
+}
+
+.eye .iris.nude {
+  background: var(--nude);
+}
+
+.eye .iris.blue {
+  background: var(--blue);
+}
+
+.eye .iris.green::before {
+  background: var(--green);
+}
+
+.eye .iris.black::before {
+  background: var(--black);
+}
+
+.eye .iris.yellow::before {
+  background: var(--yellow);
+}
+
+.eye .iris.tan::before {
+  background: var(--tan);
+}
+
+.eye .iris.white::before {
+  background: var(--white);
+}
+
+.eye .iris.red::before {
+  background: var(--red);
+}
+
+.eye .iris.pink::before {
+  background: var(--pink);
+}
+
+.eye .iris.purple::before {
+  background: var(--purple);
+}
+
+.eye .iris.lightBlue::before {
+  background: var(--lightBlue);
+}
+
+.eye .iris.mint::before {
+  background: var(--mint);
+}
+
+.eye .iris.indigo::before {
   background: var(--indigo);
 }
+
+.eye .iris.rose::before {
+  background: var(--rose);
+}
+
+.eye .iris.darkBlue::before {
+  background: var(--darkBlue);
+}
+
 
 .eye .iris:hover,
 .eye .iris:focus {
