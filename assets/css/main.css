@@ -49,6 +49,29 @@ main > a:nth-child(3n+3) {
   justify-self: end;
 }
 
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+:focus-visible,
+a:focus-visible,
+.focus-visible {
+  position: relative;
+  z-index: 10000 !important;
+  outline: 3px solid var(--blue);
+  box-shadow: 0 0 0 6px var(--lightBlue);
+}
+
+div:focus-visible {
+  outline: none;
+}
+
 /* ------- Eye -------
 CSS blinking eye animation from
 https://codepen.io/creme/pen/rdjXav
@@ -58,6 +81,7 @@ https://codepen.io/creme/pen/rdjXav
   position: relative;
   width: 200px;
   height: 150px;
+  z-index: 0;
 }
 
 .eye .iris {
