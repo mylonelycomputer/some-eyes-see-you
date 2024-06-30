@@ -2,13 +2,14 @@ html {
   /* Typography */
   --font-serif: "Selectric Serif", sans-serif;
 
-  --font-size--default: 2.5rem;
-  --font-size--small: 1.2rem;
-  --font-size--medium: 2.2rem;
-  --font-size--large: 2.5rem;
+  --font-size--default: 1.2rem;
+  --font-size--small: 1rem;
+  --font-size--medium: 1.1rem;
+  --font-size--large: 1.3rem;
 
   /* Colours */
   --black: #393144;
+  --grey: #505050;
   --beige: #F2EEE9;
   --white: #DEE7E8;
   --lightBlue: #85C1FF;

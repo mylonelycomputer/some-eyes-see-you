@@ -15,40 +15,6 @@ body {
   box-sizing: border-box;
 }
 
-/* ------- Main ------- */
-main {
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  position: relative;
-  width: 80%;
-  height: 100vh;
-}
-
-main > a:nth-child(3n+1) {
-  position: relative;
-  bottom: calc(10% - 120px);
-  left: 25px;
-  width: 220px;
-  justify-self: center;
-}
-
-main > a:nth-child(3n+2) {
-  position: relative;
-  bottom: calc(25% - 40px);
-  right: 20px;
-  width: 220px;
-  justify-self: start;
-}
-
-main > a:nth-child(3n+3) {
-  position: relative;
-  bottom: calc(30% - 200px);
-  left: -30px;
-  width: 220px;
-  justify-self: end;
-}
-
 .hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -70,6 +36,85 @@ a:focus-visible,
 
 div:focus-visible {
   outline: none;
+}
+
+/* ------- Main ------- */
+main.home {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  position: relative;
+  width: 80%;
+  height: 100vh;
+}
+
+main.home a:nth-child(3n+1) {
+  position: relative;
+  bottom: calc(10% - 120px);
+  left: 25px;
+  width: 220px;
+  justify-self: center;
+}
+
+main.home a:nth-child(3n+2) {
+  position: relative;
+  bottom: calc(25% - 40px);
+  right: 20px;
+  width: 220px;
+  justify-self: start;
+}
+
+main.home a:nth-child(3n+3) {
+  position: relative;
+  bottom: calc(30% - 200px);
+  left: -30px;
+  width: 220px;
+  justify-self: end;
+}
+
+/* ------- Subpages ------- */
+main.subpage {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  font-family: var(--font-serif);
+}
+
+main.subpage .eye .iris:hover,
+main.subpage .eye .iris:focus {
+  height: 70px;
+  cursor: auto;
+}
+
+main.subpage article {
+  position: relative;
+  font-size: var(--font-size--default);
+  color: var(--grey);
+}
+
+main.subpage p {
+  margin-top: 1.5rem;
+  align-self: start;
+  font-size: var(--font-size--medium);
+}
+
+main.subpage a,
+main.subpage a:visited {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 1px;
+  color: var(--grey);
+}
+
+main.subpage a:hover,
+main.subpage a:focus {
+  text-decoration-color: var(--orange);
 }
 
 /* ------- Eye -------
@@ -220,6 +265,6 @@ https://codepen.io/creme/pen/rdjXav
 
 .eye .iris:hover,
 .eye .iris:focus {
-  cursor: pointer;
   height: 20px;
+  cursor: pointer;
 }
