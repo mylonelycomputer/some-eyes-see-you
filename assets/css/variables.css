@@ -1,0 +1,31 @@
+html {
+  /* Typography */
+  --font-serif: "Selectric Serif", sans-serif;
+
+  --font-size--default: 1.2rem;
+  --font-size--small: 1rem;
+  --font-size--medium: 1.1rem;
+  --font-size--large: 1.3rem;
+
+  /* Colours */
+  --black: #393144;
+  --grey: #505050;
+  --beige: #F2EEE9;
+  --white: #DEE7E8;
+  --lightBlue: #85C1FF;
+  --darkBlue: #313879;
+  --blue: #1D9AF1;
+  --navy: #025AA0;
+  --indigo: #525ACF;
+  --purple: #7158C2;
+  --yellow: #FDD324;
+  --pink: #FEAECB;
+  --red: #DF2934;
+  --mint: #33C69B;
+  --lightGreen: #AAE26B;
+  --green: #27BF68;
+  --tan: #A5A39D;
+  --nude: #FEC7BA;
+  --rose: #FF6B94;
+  --orange: #FE6004;
+}
